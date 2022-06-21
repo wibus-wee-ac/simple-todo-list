@@ -1,0 +1,81 @@
+/* 用于解决元素内容超出元素边界的问题 */
+* {
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* 定义元素的默认样式 */
+body {
+
+  margin: 0; /* 去除页面上的margin, margin 用于设置页面上的边距 */
+  padding: 5rem 0; /* 增加页面上的padding, padding 用于设置页面上的内边距 */
+
+  font-size: 100%; /* 将字体大小设置为100% */
+  line-height: 1.5; /* 将行高设置为1.5 */
+  font-weight: 500; /* 将字体加粗设置为500 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* 将字体设置为系统默认字体 */
+
+  -webkit-font-smoothing: antialiased; /* 将字体平滑化 */
+  -moz-osx-font-smoothing: grayscale; /* 将字体平滑化 */
+
+  background-color: while;
+}
+
+
+/* container */
+.container {
+  max-width: 20rem; /* 设置容器的最大宽度 */
+  margin-right: auto; /* 将容器的右边距设置为自动 */
+  margin-left: auto; /* 将容器的左边距设置为自动 */
+}
+
+.createTask {
+  display: flex;
+  flex-direction: column;
+}
+
+.createTaskArea {
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem;
+  resize: none;
+
+  font: inherit; /*将文本框的resize属性设置为none*/
+  font-size: 1rem;
+
+  background-color: white;
+
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+
+  /* margin MDN Reference: https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin */
+  margin: 0 0 1rem;
+}
+
+.createTaskSubmit {
+  margin: 0;
+  padding: 0.1rem 0.4rem; /*去除页面上的margin,margin用于设置页面上的边距*/
+
+  font: inherit; /*增加页面上的padding,padding用于设置页面上的内边距*/
+  font-size: 0.875rem; /*将字体大小设置为0.875rem%*/
+  color: white;/*将字体颜色设置为白色*/
+
+  border: 2px solid transparent; /*将边框设置为透明*/
+
+  background-color: #0954a4; 
+  border-radius: 0.25rem; /*将边框圆角设置为0.25rem*/
+  box-shadow: 0 0 0 2px #0954a4; /* 将边框阴影设置为0 0 0 2px蓝色 */
+
+  appearance: none; /* 去除按钮的外观 */
+
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
